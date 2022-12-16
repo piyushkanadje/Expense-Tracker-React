@@ -6,7 +6,9 @@ import './NewExpense.css';
 const NewExpense = (props) => {
 
 const saveExpenseDataHandler = (entereExpenseData) => {
-
+  console.log("FromNewExpense");
+  console.log(entereExpenseData)
+  
   const expenseData = {
    ...entereExpenseData,
    id: Math.random().toString,

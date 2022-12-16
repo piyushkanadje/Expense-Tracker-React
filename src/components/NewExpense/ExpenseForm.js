@@ -64,8 +64,6 @@ const amountChaneHandler = (event) => {
     date : new Date(enteredDate),
     };
 
-
-    
   props.onSaveExpenseData(expenseData);
 
 
@@ -90,7 +88,7 @@ const amountChaneHandler = (event) => {
         </div>
         <div className='new-expense__control'>
           <label>Date</label>
-          <input type='date' min='2019-01-01' max='2022-12-31' value={enteredDate} onChange={dateChageHandler}/>
+          <input type='date' min='2019-01-01' max='2022-12-31' value={enteredDate} onChange={dateChageHandler} required/>
         </div>
       </div>
       <div className='new-expense__actions'>
