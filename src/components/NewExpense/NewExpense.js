@@ -8,8 +8,6 @@ const NewExpense = (props) => {
 const [isEditing , setIsEditiing] = useState(false);
 
 const saveExpenseDataHandler = (entereExpenseData) => {
-  console.log("FromNewExpense");
-  console.log(entereExpenseData)
   
   const expenseData = {
    ...entereExpenseData,
